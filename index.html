@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystone Supply Co. - Build with Confidence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">KEYSTONE</a>
+                <ul class="main-nav">
+                    <li><a href="#categories">Products</a></li>
+                    <li><a href="#commitment">Why Us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="header-right">
+                    <!-- NEW: Dropdown Account Menu Structure -->
+                    <div class="account-menu">
+                        <button id="account-button" class="nav-cta">Account</button>
+                        <ul id="account-dropdown" class="dropdown-menu">
+                            <!-- This will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (No changes here) -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="menu-close" id="menu-close" aria-label="Close Menu">×</button>
+        <ul>
+            <li><a href="#categories">Products</a></li>
+            <li><a href="#commitment">Why Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="signin.html">Account</a></li>
+        </ul>
+    </div>
+
+    <!-- The rest of your main content remains exactly the same -->
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Materials for the Modern Builder.</h1>
+                <p>Premium, sustainable, and delivered on time. Your project's foundation starts here.</p>
+                <a href="#categories" class="button-primary">Explore Our Products</a>
+            </div>
+        </section>
+        <section id="features" class="container">
+            <div class="feature">
+                <div class="feature-icon"><img src="https://images.unsplash.com/photo-1542144612-1b3641ec3459?auto=format&fit=crop&w=400&q=80" alt="High-quality lumber"></div>
+                <h3>Unmatched Quality</h3>
+                <p>We source only the highest-grade materials, ensuring durability and performance for every project.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon"><img src="https://images.unsplash.com/photo-1587302923931-75742c8c45d3?auto=format&fit=crop&w=400&q=80" alt="Delivery truck"></div>
+                <h3>Reliable Delivery</h3>
+                <p>Our logistics network guarantees your materials arrive on-site, on schedule, every single time.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon"><img src="https://images.unsplash.com/photo-1556742518-a6d1c91136b8?auto=format&fit=crop&w=400&q=80" alt="Support team member helping customer"></div>
+                <h3>Expert Support</h3>
+                <p>Our dedicated team of professionals is ready to assist you from material selection to final delivery.</p>
+            </div>
+        </section>
+        <section id="commitment">
+            <div class="container commitment-grid">
+                <div class="commitment-image"><img src="https://images.unsplash.com/photo-1581092448347-542337dc209a?auto=format&fit=crop&w=800&q=80" alt="Engineer reviewing plans"></div>
+                <div class="commitment-content">
+                    <h2 class="section-title-left">Your Partner in a<br>Sustainable Future.</h2>
+                    <p>We believe in building more than just structures; we believe in building lasting relationships and a better planet. Our commitment to sourcing sustainable materials and optimizing logistics means you can build with a clear conscience, knowing your project is both high-quality and environmentally responsible.</p>
+                    <a href="#" class="button-secondary">Learn About Our Process</a>
+                </div>
+            </div>
+        </section>
+        <section id="categories">
+            <div class="container">
+                <h2 class="section-title">Build Your Vision</h2>
+                <p class="section-subtitle">From foundation to finish, we have everything you need.</p>
+                <div class="category-grid">
+                    <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1593113593330-53d395c80a22?auto=format&fit=crop&w=800&q=80');"><div class="category-overlay"><h3>Lumber & Framing</h3></div></div>
+                    <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1604573713628-444d62f18349?auto=format&fit=crop&w=800&q=80');"><div class="category-overlay"><h3>Flooring & Tile</h3></div></div>
+                    <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1579725942439-de731998533a?auto=format&fit=crop&w=800&q=80');"><div class="category-overlay"><h3>Windows & Doors</h3></div></div>
+                    <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80');"><div class="category-overlay"><h3>Fixtures & Finishes</h3></div></div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Our Materials in Action</h2>
+                <p class="section-subtitle">Explore projects built with the quality and reliability of Keystone materials.</p>
+                <div class="project-grid">
+                    <div class="project-item"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Modern residential home"><div class="project-overlay"><h4>Modern Villa</h4><p>Aspen, Colorado</p></div></div>
+                    <div class="project-item"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80" alt="Luxury apartment interior"><div class="project-overlay"><h4>Downtown Lofts</h4><p>New York, New York</p></div></div>
+                    <div class="project-item"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Suburban family home"><div class="project-overlay"><h4>The Oakside</h4><p>Austin, Texas</p></div></div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial">
+            <div class="container"><div class="testimonial-box"><blockquote>"Keystone Supply transformed our workflow. The quality of their materials and the reliability of their delivery service are second to none. They're a true partner."</blockquote><cite>— Sarah Jenkins, Lead Architect at BuildWell Inc.</cite></div></div>
+        </section>
+        <section id="cta">
+            <div class="container"><h2>Let's Build Something Great Together.</h2><p>Get a custom quote or talk to one of our material experts today.</p><a href="#" class="button-primary">Get a Quote</a></div>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <!-- Footer content is unchanged -->
+    </footer>
+
+    <!-- NEW, SMARTER JAVASCRIPT FOR LOGIN MANAGEMENT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Elements ---
+            const accountButton = document.getElementById('account-button');
+            const accountDropdown = document.getElementById('account-dropdown');
+            const header = document.getElementById('main-header');
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const mobileNav = document.getElementById('mobile-nav');
+
+            // --- State Management ---
+            // We use 'isLoggedIn' as the true test of being logged in.
+            const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+            const userName = localStorage.getItem('keystoneUserName');
+
+            function updateAccountMenu() {
+                if (isLoggedIn && userName) {
+                    // LOGGED-IN STATE
+                    accountButton.innerHTML = `Welcome, ${userName.split(' ')[0]} <i class="fa-solid fa-caret-down"></i>`;
+                    accountDropdown.innerHTML = `
+                        <li><a href="#">View Account</a></li>
+                        <li><a href="#" id="logout-button">Log Out</a></li>
+                    `;
+                } else {
+                    // LOGGED-OUT STATE
+                    accountButton.innerHTML = `Account <i class="fa-solid fa-caret-down"></i>`;
+                    accountDropdown.innerHTML = `
+                        <li><a href="signin.html">Sign In</a></li>
+                        <li><a href="create-account.html">Create Account</a></li>
+                    `;
+                }
+            }
+
+            // --- Event Listeners ---
+
+            // Toggle dropdown on click
+            accountButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent click from bubbling up to the window
+                accountDropdown.classList.toggle('active');
+            });
+
+            // Log out logic
+            accountDropdown.addEventListener('click', (event) => {
+                if (event.target.id === 'logout-button') {
+                    event.preventDefault();
+                    localStorage.setItem('isLoggedIn', 'false');
+                    localStorage.removeItem('keystoneUserName'); // Optional: clear name on logout
+                    window.location.reload(); // Reload the page to show logged-out state
+                }
+            });
+            
+            // Hide dropdown if clicking anywhere else on the page
+            window.addEventListener('click', () => {
+                if (accountDropdown.classList.contains('active')) {
+                    accountDropdown.classList.remove('active');
+                }
+            });
+
+            // --- Initial Setup ---
+            updateAccountMenu();
+
+            // --- Existing Listeners for Mobile Menu and Sticky Header ---
+            menuToggle.addEventListener('click', () => mobileNav.classList.add('active'));
+            menuClose.addEventListener('click', () => mobileNav.classList.remove('active'));
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { header.classList.add('scrolled'); } 
+                else { header.classList.remove('scrolled'); }
+            });
+        });
+    </script>
+
+</body>
+</html>

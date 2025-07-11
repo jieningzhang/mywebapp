@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Keystone Supply Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="form-page">
+
+    <div class="form-container">
+        <a href="index.html" class="form-logo">KEYSTONE</a>
+
+        <div class="form-box">
+            <h2>Create Account</h2>
+            
+            <form id="create-account-form">
+                <div id="form-message"></div>
+                <div class="input-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="At least 6 characters" required>
+                </div>
+                 <div class="input-group">
+                    <label for="password-check">Re-enter password</label>
+                    <input type="password" id="password-check" required>
+                </div>
+                
+                <button type="submit" class="form-button">Create your Keystone Account</button>
+            </form>
+            <p class="legal-text">
+                By creating an account, you agree to Keystone Supply's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+            </p>
+            <hr class="form-hr">
+            <p class="bottom-link">
+                Already have an account? <a href="signin.html">Sign-In</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('create-account-form');
+        const messageDiv = document.getElementById('form-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const nameInput = document.getElementById('name').value;
+            const passwordInput = document.getElementById('password').value;
+            const passwordCheckInput = document.getElementById('password-check').value;
+
+            if (passwordInput.length < 6) {
+                messageDiv.textContent = 'Password must be at least 6 characters.';
+                messageDiv.className = 'message-error';
+                return;
+            }
+            if (passwordInput !== passwordCheckInput) {
+                messageDiv.textContent = 'Passwords do not match.';
+                messageDiv.className = 'message-error';
+                return;
+            }
+            
+            // --- Success ---
+            // JUST save the name. Do NOT set isLoggedIn to true.
+            localStorage.setItem('keystoneUserName', nameInput);
+            
+            // Show a success message and then redirect to the homepage.
+            messageDiv.textContent = 'Account created! Redirecting home...';
+            messageDiv.className = 'message-success';
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>
